@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Global -->
+    <link rel="stylesheet" href="../css/global.css">
+
+    <!-- CSS Pokedex -->
+    <link rel="stylesheet" href="../css/bg-types.css">
+
+    <!-- CSS Pokedex -->
+    <link rel="stylesheet" href="../css/pokedex.css">
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/aa68db9477.js" crossorigin="anonymous"></script>
+
+    <!-- pokemon-model Scripts -->
+    <script src="assets/js/pokemon-model.js" defer></script>
+
+    <!-- poke-api Scripts -->
+    <script src="assets/js/poke-api.js" defer></script>
+</head>
+
+<body>
+    <section class="content">
+        <section class="top-content">
+            <div class="back-heart">
+                <button class="back" type="button">
+                    <p><i class="fa-solid fa-arrow-left"></i></p>
+                </button>
+                <button class="heart" type="button">
+                    <p><i class="fa-regular fa-heart"></i></p>
+                </button>
+            </div>
+    
+            <ol class="pokemons">
+                <li class="pokemon grass">
+                    <span class="name">bulbasaur</span>
+                    <span class="number">#1</span>
+                    <div class="detail">
+                        <ol class="types">
+                            <li class="type grass">grass</li>
+                            <li class="type poison">poison</li>
+                        </ol>
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
+                        alt="bulbasaur">
+                    </div>
+                
+                </li>
+            </ol>
+    
+        </section>
+    
+        <section class="title-info">
+            <ul>
+                <li class="title"><a>About</a></li>
+                <li class="title"><a>Base Stats</a></li>
+                <li class="title"><a>Evolution</a></li>
+                <li class="title"><a>Moves</a></li>
+            </ul>
+    
+        </section>
+    
+        <section class="info-about">
+            <div class="properties">
+                <div class="properties-value">
+                    <p>Species</p>
+                    <p>Seed</p>
+                </div>
+                <div class="properties-value">
+                    <p>Height</p>
+                    <p>2'3,6'(0,70cm)</p>
+                </div>
+                <div class="properties-value">
+                    <p>Weight</p>
+                    <p>15.2lbs(6,9kg)</p>
+                </div>
+                <div class="properties-value">
+                    <p>Abilities</p>
+                    <p>Overgrow, Chlorophyl</p>
+                </div>
+            </div>
+            <div class="properties">
+                <h2>Breeding</h2>
+                <div class="properties-value">
+                    <p>Gender</p>
+                    <div class="gender">
+                        <div class="gender-info">
+                            <p><i class="fa-solid fa-mars"></i></p>
+                            <p>87.5%</p>
+                        </div>
+                        <div class="gender-info">
+                            <p><i class="fa-solid fa-mars"></i></p>
+                            <p>12.5%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="properties-value">
+                    <p>Egg Groups</p>
+                    <p>Monster</p>
+                </div>
+                <div class="properties-value">
+                    <p>Egg Cycle</p>
+                    <p>Grass</p>
+                </div>
+            </div>
+        </section>
+        <section class="info-base-stats">
+    
+        </section>
+        <section class="info-evolution">
+    
+        </section>
+        <section class="info-moves">
+    
+        </section>
+    </section>
+
+</body>
+
+</html>
