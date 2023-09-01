@@ -21,11 +21,11 @@
     <!-- CSS Global -->
     <link rel="stylesheet" href="../css/global.css">
 
-    <!-- CSS Pokedex -->
+    <!-- CSS bg types -->
     <link rel="stylesheet" href="../css/bg-types.css">
 
     <!-- CSS Pokedex -->
-    <link rel="stylesheet" href="../css/pokedex.css">
+    <link rel="stylesheet" href="../css/pokemon-info.css">
 
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/aa68db9477.js" crossorigin="anonymous"></script>
@@ -42,93 +42,90 @@
         <section class="top-content">
             <div class="back-heart">
                 <button class="back" type="button">
-                    <p><i class="fa-solid fa-arrow-left"></i></p>
+                    <p><i class="fa-solid fa-arrow-left-long"></i></p>
                 </button>
                 <button class="heart" type="button">
                     <p><i class="fa-regular fa-heart"></i></p>
                 </button>
             </div>
-    
+
             <ol class="pokemons">
                 <li class="pokemon grass">
-                    <span class="name">bulbasaur</span>
-                    <span class="number">#1</span>
+                    <div class="name-number">
+                        <span class="name">bulbasaur</span>
+                        <span class="number">#1</span>
+                    </div>
                     <div class="detail">
                         <ol class="types">
                             <li class="type grass">grass</li>
                             <li class="type poison">poison</li>
                         </ol>
                         <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
-                        alt="bulbasaur">
+                            alt="bulbasaur">
                     </div>
-                
+
                 </li>
             </ol>
-    
+
         </section>
-    
-        <section class="title-info">
-            <ul>
-                <li class="title"><a>About</a></li>
-                <li class="title"><a>Base Stats</a></li>
-                <li class="title"><a>Evolution</a></li>
-                <li class="title"><a>Moves</a></li>
-            </ul>
-    
-        </section>
-    
+
+        <ul class="title-info">
+            <li><button class="title" type="button">About</button></li>
+            <li><button class="title" type="button">Base Stats</button></li>
+            <li><button class="title" type="button">Evolution</button></li>
+            <li><button class="title" type="button">Moves</button></li>
+        </ul>
+
         <section class="info-about">
             <div class="properties">
                 <div class="properties-value">
-                    <p>Species</p>
-                    <p>Seed</p>
+                    <p class="propertie">Species</p>
+                    <p class="value">Seed</p>
                 </div>
                 <div class="properties-value">
-                    <p>Height</p>
-                    <p>2'3,6'(0,70cm)</p>
+                    <p class="propertie">Height</p>
+                    <p class="value">2'3,6'(0,70cm)</p>
                 </div>
                 <div class="properties-value">
-                    <p>Weight</p>
-                    <p>15.2lbs(6,9kg)</p>
+                    <p class="propertie">Weight</p>
+                    <p class="value">15.2lbs(6,9kg)</p>
                 </div>
                 <div class="properties-value">
-                    <p>Abilities</p>
-                    <p>Overgrow, Chlorophyl</p>
+                    <p class="propertie">Abilities</p>
+                    <p class="value">Overgrow, Chlorophyl</p>
                 </div>
             </div>
-            <div class="properties">
-                <h2>Breeding</h2>
-                <div class="properties-value">
-                    <p>Gender</p>
-                    <div class="gender">
-                        <div class="gender-info">
-                            <p><i class="fa-solid fa-mars"></i></p>
-                            <p>87.5%</p>
-                        </div>
-                        <div class="gender-info">
-                            <p><i class="fa-solid fa-mars"></i></p>
-                            <p>12.5%</p>
-                        </div>
+            <h2>Breeding</h2>
+            <div class="properties-value">
+                <p class="propertie">Gender</p>
+                <div class="gender">
+                    <div class="gender-info">
+                        <p class="icon-value"><i class="fa-solid fa-mars"></i></p>
+                        <p class="value">87.5%</p>
+                    </div>
+                    <div class="gender-info">
+                        <p class="icon-value"><i class="fa-solid fa-mars"></i></p>
+                        <p class="value">12.5%</p>
                     </div>
                 </div>
-                <div class="properties-value">
-                    <p>Egg Groups</p>
-                    <p>Monster</p>
-                </div>
-                <div class="properties-value">
-                    <p>Egg Cycle</p>
-                    <p>Grass</p>
-                </div>
+            </div>
+            <div class="properties-value">
+                <p class="propertie">Egg Groups</p>
+                <p class="value">Monster</p>
+            </div>
+            <div class="properties-value">
+                <p class="propertie">Egg Cycle</p>
+                <p class="value">Grass</p>
             </div>
         </section>
         <section class="info-base-stats">
-    
+
         </section>
         <section class="info-evolution">
-    
+
         </section>
         <section class="info-moves">
-    
+
         </section>
     </section>
 
