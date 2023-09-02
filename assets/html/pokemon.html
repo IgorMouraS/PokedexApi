@@ -31,10 +31,13 @@
     <script src="https://kit.fontawesome.com/aa68db9477.js" crossorigin="anonymous"></script>
 
     <!-- pokemon-model Scripts -->
-    <script src="assets/js/pokemon-model.js" defer></script>
+    <script src="../js/pokemon-model.js" defer></script>
 
     <!-- poke-api Scripts -->
-    <script src="assets/js/poke-api.js" defer></script>
+    <script src="../js/poke-api.js" defer></script>
+
+    <!-- pokemon-info Scripts -->
+    <script src="../js/pokemon-info.js" defer></script>
 </head>
 
 <body>
@@ -60,24 +63,26 @@
                             <li class="type grass">grass</li>
                             <li class="type poison">poison</li>
                         </ol>
-                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
-                            alt="bulbasaur">
                     </div>
-
                 </li>
             </ol>
 
         </section>
 
-        <ul class="title-info">
-            <li><button class="title" type="button">About</button></li>
-            <li><button class="title" type="button">Base Stats</button></li>
-            <li><button class="title" type="button">Evolution</button></li>
-            <li><button class="title" type="button">Moves</button></li>
-        </ul>
+        <section class="img-btn">
+
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
+                alt="bulbasaur">
+
+            <ul class="title-info">
+                <li><button class="title" id="about" type="button">About</button></li>
+                <li><button class="title" id="base-stats" type="button">Base Stats</button></li>
+            </ul>
+        </section>
+
 
         <section class="info-about">
-            <div class="properties">
+            <div class="properties-about">
                 <div class="properties-value">
                     <p class="propertie">Species</p>
                     <p class="value">Seed</p>
@@ -118,14 +123,38 @@
                 <p class="value">Grass</p>
             </div>
         </section>
-        <section class="info-base-stats">
 
-        </section>
-        <section class="info-evolution">
-
-        </section>
-        <section class="info-moves">
-
+        <section class="info-base-stats hide">
+            <div class="properties">
+                <div class="properties-value">
+                    <p class="propertie">HP</p>
+                    <p class="value">45</p>
+                </div>
+                <div class="properties-value">
+                    <p class="propertie">Attack</p>
+                    <p class="value">60</p>
+                </div>
+                <div class="properties-value">
+                    <p class="propertie">Defense</p>
+                    <p class="value">48</p>
+                </div>
+                <div class="properties-value">
+                    <p class="propertie">Sp. Atk</p>
+                    <p class="value">65</p>
+                </div>
+                <div class="properties-value">
+                    <p class="propertie">Sp. Defk</p>
+                    <p class="value">65</p>
+                </div>
+                <div class="properties-value">
+                    <p class="propertie">Speed</p>
+                    <p class="value">65</p>
+                </div>
+                <div class="properties-value">
+                    <p class="propertie">Total</p>
+                    <p class="value">65</p>
+                </div>
+            </div>
         </section>
     </section>
 

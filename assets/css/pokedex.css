@@ -1,3 +1,7 @@
+body{
+    background-color: #cacaca;
+}
+
 .content{
     padding: 1rem;
     background-color: #cacaca;
@@ -94,6 +98,9 @@
 }
 
 @media screen and (min-width: 992px) {
+    body{
+        background-color: #adacac;
+    }
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
