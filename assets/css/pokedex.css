@@ -15,8 +15,12 @@ body{
     grid-template-columns: 1fr;
 }
 
+.link{
+    margin: 0.5rem;
+    text-decoration: none;
+}
+
 .pokemon {
-    margin: .5rem;
     padding: 1rem .825rem;
     border-radius: 1rem;
     color: #f4f4f4;

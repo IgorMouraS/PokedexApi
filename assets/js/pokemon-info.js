@@ -1,5 +1,8 @@
+const heartUnclick = document.querySelector(".heart-unclick");
+const heartClick = document.querySelector(".heart-click");
+const topContent = document.querySelector(".top-content");
 const pokemonsList = document.querySelector(".pokemons");
-const imgBtn = document.querySelector(".img-btn");
+const imgPokemon = document.querySelector(".img");
 const propertiesAbout = document.querySelector(".properties-about");
 const propertiesValues = document.querySelector(".properties");
 const about = document.querySelector("#about");
@@ -16,7 +19,7 @@ function convertPokemonToLi(pokemon) {
             </div>
             <div class="detail">
                 <ol class="types">
-                    ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join("")}
+                    ${pokemon.types.map(type => `<li class="type ${type}">${type}</li>`).join("")}
                 </ol>
 
             </div>
@@ -57,29 +60,35 @@ function convertInfoAbout(pokemon) {
             </div>
             <div class="properties-value">
                 <p class="propertie">Abilities</p>
-                <p class="value">${pokemon.abilities}</p>
+                <p class="value">${pokemon.abilities.map(ability => ability.name).join(", ")}</p>
             </div>
         `
+}
+
+function hideHtml (button, removeHide, addHide){
+    button.addEventListener("click", () => {
+        removeHide.classList.remove("hide");
+        addHide.classList.add("hide");
+    })
 }
 
 function loadPokemonInfo(offset, limit) {
 
     pokeApi.getPokemons(offset, limit).then((pokemons) => {
-        pokemonsList.innerHTML = convertPokemonToLi(pokemons);
-        imgBtn.innerHTML = convertImg(pokemons);
-        propertiesAbout.innerHTML = convertInfoAbout(pokemons);
-        propertiesValues.innerHTML = convertPropertieValue(pokemons);
+        console.log(pokemons);
+        topContent.classList.add(pokemons[0].types[0]);
+        pokemonsList.innerHTML += convertPokemonToLi(pokemons[0]);
+        imgPokemon.innerHTML += convertImg(pokemons[0]);
+        propertiesAbout.innerHTML += convertInfoAbout(pokemons[0]);
+        propertiesValues.innerHTML += convertPropertieValue(pokemons[0]);
     })
 }
 
-loadPokemonInfo(0, 1);
+loadPokemonInfo(10, 1);
 
-about.addEventListener("click", () => {
-    infoAbout.classList.remove("hide");
-    infoBaseStats.classList.add("hide");
-})
+hideHtml(about, infoAbout, infoBaseStats);
+hideHtml(baseStats, infoBaseStats, infoAbout);
+hideHtml(heartUnclick, heartClick, heartUnclick);
+hideHtml(heartClick, heartUnclick, heartClick);
 
-baseStats.addEventListener("click", () => {
-    infoBaseStats.classList.remove("hide");
-    infoAbout.classList.add("hide");
-})
+//trazer valor do offset automatico

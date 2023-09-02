@@ -1,26 +1,25 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
 }
 
-body{
+body {
     background-color: #f3efef;
 }
 
-.content{
+.content {
     background-color: #f3efef;
     padding-bottom: 1rem;
 }
 
-.top-content{
-    background-color: #7AC74C;
+.top-content {
     padding: 1rem;
     height: 320px;
 }
 
-.top-content .back-heart{
+.top-content .back-heart {
     width: 100%;
     margin: 1rem 0;
     display: flex;
@@ -28,7 +27,7 @@ body{
 }
 
 .top-content .back-heart .back,
-.top-content .back-heart .heart{
+.top-content .back-heart .heart {
     border: none;
     background-color: transparent;
     font-size: 1.2rem;
@@ -42,7 +41,7 @@ body{
     text-transform: capitalize;
 }
 
-.pokemon .name-number{
+.pokemon .name-number {
     padding: 0 .25rem;
     display: flex;
     flex-direction: row;
@@ -50,12 +49,12 @@ body{
     justify-content: space-between;
 }
 
-.pokemon .name-number .name{
+.pokemon .name-number .name {
     font-size: 1.825rem;
     font-weight: 600;
 }
 
-.pokemon .name-number .number{
+.pokemon .name-number .number {
     font-size: 1rem;
     font-weight: 600;
 }
@@ -65,7 +64,7 @@ body{
     flex-direction: column;
 }
 
-.pokemon .detail .types{
+.pokemon .detail .types {
     display: flex;
     flex-direction: row;
     padding: 0 .25rem;
@@ -82,13 +81,13 @@ body{
     text-align: center;
 }
 
-.img-btn{
+.img-btn {
     background-color: #f3efef;
     border-radius: 1.5rem 1.5rem 0 0;
     margin-top: -2rem;
 }
 
-.img-btn img{
+.img-btn img {
     margin-top: -8rem;
     margin-bottom: 1rem;
     width: 100%;
@@ -96,7 +95,7 @@ body{
     align-self: center;
 }
 
-.img-btn .title-info{
+.img-btn .title-info {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -105,17 +104,17 @@ body{
     height: 50px;
 }
 
-.img-btn .title-info .title{
+.img-btn .title-info .title {
     border: none;
     background-color: transparent;
     color: #939393;
 }
 
-.img-btn .title-info .title:hover{
+.img-btn .title-info .title:hover {
     color: black;
 }
 
-.img-btn .title-info .title:focus{
+.img-btn .title-info .title:focus {
     font-weight: 500;
     color: black;
     text-decoration: underline rgb(6, 6, 202) 2px;
@@ -123,11 +122,13 @@ body{
 }
 
 .info-about,
-.info-base-stats{
-    padding: 0 1.2rem;
+.info-base-stats {
+    width: 60%;
+    margin: 0 auto;
 }
+
 .info-about h2,
-.info-base-stats h2{
+.info-base-stats h2 {
     font-size: 1.2rem;
     font-weight: 600;
     margin: 1.2rem 0;
@@ -135,56 +136,62 @@ body{
 }
 
 .info-about .properties-about,
-.info-base-stats .properties{
+.info-base-stats .properties {
     display: flex;
     flex-direction: column;
 }
 
 .info-about .properties-value,
-.info-base-stats .properties-value{
+.info-base-stats .properties-value {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
     margin-bottom: 1rem;
+    column-gap: 2rem;
 }
 
 .info-about .properties-value .propertie,
-.info-base-stats .propertie{
+.info-base-stats .propertie {
     color: #939393;
     font-size: 1rem;
+    align-items: center;
 }
 
-.info-about .properties-value .value{
+.info-about .properties-value .value,
+.info-base-stats .value {
     color: #000000;
     font-size: 1rem;
+    text-align: center;
 }
 
-.info-about .properties-value .gender{
+.info-about .properties-value .gender {
     display: flex;
     flex-direction: row;
     gap: 2rem;
 }
 
-.info-about .properties-value .gender .gender-info{
+.info-about .properties-value .gender .gender-info {
     display: flex;
     flex-direction: row;
     gap: .625rem;
 }
 
-.info-about .properties-value .gender .gender-info .icon-value{
+.info-about .properties-value .gender .gender-info .icon-value {
     color: blue;
 }
 
 @media screen and (min-width: 992px) {
-    body{
+    body {
         background-color: #d8d8d8;
     }
-    .content{
+
+    .content {
         max-width: 600px;
         height: 750px;
         margin: 2rem auto;
         border-radius: 1rem;
     }
-    .top-content{
+
+    .top-content {
         border-radius: 1rem 1rem 0 0;
     }
 }
