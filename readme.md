@@ -14,6 +14,8 @@ Pretendo aprimorar esse projeto deixando-o mais robusto futuramente!
 
 ![adicionando badges com SHIELDS IO](https://img.shields.io/badge/STATUS-CONCLUIDO-<COLOR>GREEN)
 
+![Portifolio](imagemReadme/Screenshot_2.png)
+![Portifolio](imagemReadme/Screenshot_1.png)
+![Portifolio](imagemReadme/Screenshot_3.png)
 
-
-Autor ❤ [Igor Moura Sousa]([https://github.com/IgorMouraS])
+[Meu Perfil]([https://github.com/IgorMouraS])
